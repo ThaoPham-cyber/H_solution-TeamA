@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import React, { useEffect, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
@@ -243,7 +243,7 @@ export default function SosPage() {
     setFormError("");
   };
 
-  const handleContinueFromLocation = () => {
+  const handleContinueFromLocation = async () => {
     if (locationMethod === "manual" && manualAddress.trim().length < 5) {
       setFormError("Please enter your address.");
       return;
@@ -259,6 +259,21 @@ export default function SosPage() {
     setConnectingDots("");
     setTechnicianEta("~8 mins");
     setStep("CALLING");
+
+    try {
+      await fetch("/api/sos", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          category: selectedIssue,
+          details: problemDetails,
+          address: manualAddress || "GPS Shared Location",
+          locationMethod,
+        }),
+      });
+    } catch (err) {
+      console.error("Failed to register SOS request", err);
+    }
   };
 
   const handleCancel = () => {

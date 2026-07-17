@@ -46,6 +46,7 @@ export default function BookingPage() {
 
   // Submitting state
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [orderCode, setOrderCode] = useState("");
 
   useEffect(() => {
     setMounted(true);
@@ -87,20 +88,44 @@ export default function BookingPage() {
     }
   }, [dateType, customDate]);
 
-  const handleBookRepair = (e: React.FormEvent) => {
+  const handleBookRepair = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!address.trim()) {
       alert("Vui lòng nhập hoặc chọn vị trí sửa chữa");
       return;
     }
     setIsSubmitting(true);
-    setTimeout(() => {
+    try {
+      const response = await fetch("/api/booking", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          wheelchairId,
+          category,
+          notes,
+          date: finalDate,
+          timeSlot: selectedTimeSlot,
+          address,
+        }),
+      });
+      if (response.ok) {
+        const resData = await response.json();
+        setOrderCode(resData.data.orderCode);
+        setStep("SUCCESS");
+      } else {
+        const errData = await response.json();
+        alert(errData.error || "Có lỗi xảy ra khi đặt lịch");
+      }
+    } catch (err) {
+      console.error(err);
+      alert("Không thể kết nối đến server");
+    } finally {
       setIsSubmitting(false);
-      setStep("SUCCESS");
-    }, 1200);
+    }
   };
 
   const getCategoryDetails = (cat: Category) => {
+
     switch (cat) {
       case "pin":
         return { label: "Hệ thống Pin / Nguồn", icon: "battery_charging_full", color: "text-[#004e9f] bg-[#d7e3ff]" };
@@ -457,7 +482,7 @@ export default function BookingPage() {
               
               <div className="border-b border-dashed border-slate-200 pb-3.5 mb-3.5 flex justify-between items-center">
                 <span className="text-xs font-bold text-slate-400">MÃ LỊCH HẸN</span>
-                <span className="text-sm font-extrabold text-[#004e9f] tracking-wider">HS-{(Math.floor(Math.random() * 9000) + 1000)}</span>
+                <span className="text-sm font-extrabold text-[#004e9f] tracking-wider">{orderCode}</span>
               </div>
 
               <div className="space-y-3.5">

@@ -1,0 +1,338 @@
+{
+  "repairs": [
+    {
+      "id": "10",
+      "orderCode": "GW-13537",
+      "title": "Motor inspection",
+      "status": "in_progress",
+      "dateTime": "08:00, Hôm nay (16/07)",
+      "location": "ghheher",
+      "technician": {
+        "name": "Pham Duc D",
+        "rating": 4.8,
+        "reviews": 102,
+        "avatar": "P",
+        "verified": true
+      },
+      "jobs": [
+        {
+          "title": "Motor inspection & maintenance",
+          "description": "êtrii67jew",
+          "price": "1,200,000đ"
+        }
+      ],
+      "paymentMethod": "Cash",
+      "total": 1200000,
+      "images": [
+        "/repair-photo-1.png"
+      ],
+      "type": "booking",
+      "createdAt": "2026-07-16T07:13:56.085Z"
+    },
+    {
+      "id": "9",
+      "orderCode": "GW-62828",
+      "title": "Emergency rescue (motor)",
+      "status": "in_progress",
+      "dateTime": "14:13, 16/7/2026",
+      "location": "afagggwe",
+      "technician": {
+        "name": "Le Van C",
+        "rating": 4.5,
+        "reviews": 56,
+        "avatar": "L",
+        "verified": false
+      },
+      "jobs": [
+        {
+          "title": "motor emergency diagnostic",
+          "description": "sfsagsdgsgs",
+          "price": "250,000đ"
+        },
+        {
+          "title": "On-site dispatch fee",
+          "description": "Distance-based emergency transport",
+          "price": "200,000đ"
+        }
+      ],
+      "paymentMethod": "Cash",
+      "total": 450000,
+      "images": [
+        "/repair-photo-1.png"
+      ],
+      "type": "sos",
+      "createdAt": "2026-07-16T07:13:07.092Z"
+    },
+    {
+      "id": "8",
+      "orderCode": "GW-34856",
+      "title": "Battery Replacement",
+      "status": "in_progress",
+      "dateTime": "15:00, Hôm nay (16/07)",
+      "location": "Thôn Bản Thiện",
+      "technician": {
+        "name": "Tran Minh B",
+        "rating": 4.7,
+        "reviews": 89,
+        "avatar": "T",
+        "verified": true
+      },
+      "jobs": [
+        {
+          "title": "New battery pack replacement",
+          "description": "Lithium-ion 24V 20Ah",
+          "price": "2,500,000đ"
+        },
+        {
+          "title": "Disposal & recycling fee",
+          "description": "Old lead-acid/lithium battery safe disposal",
+          "price": "400,000đ"
+        }
+      ],
+      "paymentMethod": "Cash",
+      "total": 2900000,
+      "images": [
+        "/repair-photo-1.png"
+      ],
+      "type": "booking",
+      "createdAt": "2026-07-16T07:11:06.898Z"
+    },
+    {
+      "id": "7",
+      "orderCode": "GW-64519",
+      "title": "Battery Replacement",
+      "status": "in_progress",
+      "dateTime": "09:30, Ngày mai (17/07)",
+      "location": "789 Duong Lang, Dong Da, Ha Noi",
+      "technician": {
+        "name": "Nguyen Van A",
+        "rating": 4.9,
+        "reviews": 124,
+        "avatar": "N",
+        "verified": true
+      },
+      "jobs": [
+        {
+          "title": "New battery pack replacement",
+          "description": "Lithium-ion 24V 20Ah",
+          "price": "2,500,000đ"
+        },
+        {
+          "title": "Disposal & recycling fee",
+          "description": "Old lead-acid/lithium battery safe disposal",
+          "price": "400,000đ"
+        }
+      ],
+      "paymentMethod": "Cash",
+      "total": 2900000,
+      "images": [
+        "/repair-photo-1.png"
+      ],
+      "type": "booking",
+      "createdAt": "2026-07-16T07:08:47.014Z"
+    },
+    {
+      "id": "6",
+      "orderCode": "GW-77306",
+      "title": "Emergency rescue (battery)",
+      "status": "in_progress",
+      "dateTime": "14:08, 16/7/2026",
+      "location": "Thôn bản thiện",
+      "technician": {
+        "name": "Nguyen Van A",
+        "rating": 4.9,
+        "reviews": 124,
+        "avatar": "N",
+        "verified": true
+      },
+      "jobs": [
+        {
+          "title": "battery emergency diagnostic",
+          "description": "sâdadsfsfsf",
+          "price": "250,000đ"
+        },
+        {
+          "title": "On-site dispatch fee",
+          "description": "Distance-based emergency transport",
+          "price": "200,000đ"
+        }
+      ],
+      "paymentMethod": "Cash",
+      "total": 450000,
+      "images": [
+        "/repair-photo-1.png"
+      ],
+      "type": "sos",
+      "createdAt": "2026-07-16T07:08:31.969Z"
+    },
+    {
+      "id": "1",
+      "orderCode": "GW-98231",
+      "title": "Emergency rescue",
+      "status": "completed",
+      "dateTime": "14:30, 24/10/2023",
+      "location": "123 Nguyen Hue Street, District 1, Ho Chi Minh City",
+      "technician": {
+        "name": "Nguyen Van A",
+        "rating": 4.9,
+        "reviews": 124,
+        "avatar": "N",
+        "verified": true
+      },
+      "jobs": [
+        {
+          "title": "Replaced with new battery",
+          "description": "Lithium-ion 24V 20Ah",
+          "price": "2,450,000đ"
+        },
+        {
+          "title": "Wheel maintenance",
+          "description": "Cleaning & lubricating the axle",
+          "price": "450,000đ"
+        },
+        {
+          "title": "On-site service fee",
+          "description": "Loyal customer discount",
+          "price": "FREE",
+          "isFree": true
+        }
+      ],
+      "paymentMethod": "Cash",
+      "total": 2900000,
+      "images": [
+        "/repair-photo-1.png",
+        "/repair-photo-2.png",
+        "/repair-photo-3.png"
+      ],
+      "type": "sos",
+      "createdAt": "2023-10-24T14:30:00Z"
+    },
+    {
+      "id": "2",
+      "orderCode": "GW-98102",
+      "title": "Battery Replacement",
+      "status": "completed",
+      "dateTime": "09:15, 12/10/2023",
+      "location": "456 Le Loi Street, District 3, Ho Chi Minh City",
+      "technician": {
+        "name": "Tran Minh B",
+        "rating": 4.7,
+        "reviews": 89,
+        "avatar": "T",
+        "verified": true
+      },
+      "jobs": [
+        {
+          "title": "Battery replacement",
+          "description": "Lithium-ion 24V 20Ah",
+          "price": "2,500,000đ"
+        },
+        {
+          "title": "System diagnostic",
+          "description": "Full electrical check",
+          "price": "400,000đ"
+        }
+      ],
+      "paymentMethod": "Bank Transfer",
+      "total": 2900000,
+      "images": [
+        "/repair-photo-2.png",
+        "/repair-photo-1.png"
+      ],
+      "type": "booking",
+      "createdAt": "2023-10-12T09:15:00Z"
+    },
+    {
+      "id": "3",
+      "orderCode": "GW-97845",
+      "title": "Wheel maintenance",
+      "status": "cancelled",
+      "dateTime": "16:00, 05/10/2023",
+      "location": "789 Hai Ba Trung, District 1, Ho Chi Minh City",
+      "technician": {
+        "name": "Le Van C",
+        "rating": 4.5,
+        "reviews": 56,
+        "avatar": "L",
+        "verified": false
+      },
+      "jobs": [],
+      "paymentMethod": "N/A",
+      "total": 0,
+      "images": [],
+      "type": "booking",
+      "createdAt": "2023-10-05T16:00:00Z"
+    },
+    {
+      "id": "4",
+      "orderCode": "GW-97501",
+      "title": "Motor inspection",
+      "status": "completed",
+      "dateTime": "10:00, 20/09/2023",
+      "location": "321 Pham Ngu Lao Street, District 1, Ho Chi Minh City",
+      "technician": {
+        "name": "Pham Duc D",
+        "rating": 4.8,
+        "reviews": 102,
+        "avatar": "P",
+        "verified": true
+      },
+      "jobs": [
+        {
+          "title": "Motor bearing replacement",
+          "description": "High-speed bearings",
+          "price": "800,000đ"
+        },
+        {
+          "title": "Lubrication service",
+          "description": "Full drivetrain",
+          "price": "400,000đ"
+        }
+      ],
+      "paymentMethod": "E-wallet",
+      "total": 1200000,
+      "images": [
+        "/repair-photo-3.png",
+        "/repair-photo-1.png"
+      ],
+      "type": "booking",
+      "createdAt": "2023-09-20T10:00:00Z"
+    },
+    {
+      "id": "5",
+      "orderCode": "GW-97200",
+      "title": "Frame repair",
+      "status": "in_progress",
+      "dateTime": "08:30, 01/09/2023",
+      "location": "555 Vo Van Kiet, District 5, Ho Chi Minh City",
+      "technician": {
+        "name": "Hoang Van E",
+        "rating": 4.6,
+        "reviews": 67,
+        "avatar": "H",
+        "verified": true
+      },
+      "jobs": [
+        {
+          "title": "Frame welding",
+          "description": "Aluminum frame repair",
+          "price": "2,000,000đ"
+        },
+        {
+          "title": "Paint restoration",
+          "description": "Color match & finish",
+          "price": "1,500,000đ"
+        }
+      ],
+      "paymentMethod": "Cash",
+      "total": 3500000,
+      "images": [
+        "/repair-photo-1.png",
+        "/repair-photo-2.png",
+        "/repair-photo-3.png"
+      ],
+      "type": "booking",
+      "createdAt": "2023-09-01T08:30:00Z"
+    }
+  ]
+}
